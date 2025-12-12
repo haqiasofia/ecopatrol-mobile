@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'providers/session_provider.dart';
 import 'screens/login_screen.dart';
 import 'screens/setting_screen.dart';
+import 'screens/add_report_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +22,7 @@ class EcoPatrolApp extends ConsumerWidget {
       title: 'EcoPatrol',
       theme: ThemeData(primarySwatch: Colors.green),
       home: isLoggedIn ? const SettingsScreen() : const LoginScreen(),
+
     );
   }
 }
